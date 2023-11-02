@@ -10,14 +10,16 @@ public class Day25 {
             a = sc.nextInt();
             System.out.print("masukkan nilai b : ");
             b = sc.nextInt();
-            if (a <= b) {
-                for (int i = a; i <= b; i++) {
-                    System.out.println(i);
-                }
+            int awal,akhir;
+            if (a < b) {
+                awal = a;
+                akhir = b;
             } else {
-                for (int i = a; i >= b; i--) {
-                    System.out.println(i);
-                }
+                awal = b;
+                akhir = a;
+            }
+            for(int i = awal;i <= akhir ; i++){
+                System.out.println(i);
             }
         }
     }
